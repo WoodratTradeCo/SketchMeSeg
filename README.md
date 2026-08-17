@@ -12,7 +12,9 @@ Temporal-Driven Geometric Grounding. This repository currently provides a small 
 
 ## Method
 
-![Framework of the proposed SketchMeSeg model.](assets/graph.png)
+<p align="center">
+  <img src="assets/graph.png" alt="Framework of the proposed SketchMeSeg model." width="40%">
+</p>
 
 ![Framework of the proposed SketchMeSeg model.](assets/method.png)
 
