@@ -5,19 +5,16 @@ stroke-based vector drawing (x/y samples grouped into strokes); the output is
 a segment label for every point (e.g. for a gear: teeth / body / shaft).
 
 > **Status.** The paper describing this work has been submitted to **Pattern
-> Recognition Letters**. This repository currently provides a small sample of
+> Recognition Letters** as SketchMeSeg: Mechanical Freehand Sketch Segmentation via
+Temporal-Driven Geometric Grounding. This repository currently provides a small sample of
 > the mechanical-sketch data and the core implementation. The final version of
 > the data and code will be released once the paper is accepted.
 
 ## Method
 
-![Framework of the proposed SketchMeSeg model.](assets/method.png)
+![Framework of the proposed SketchMeSeg model.](assets/graph.png)
 
-*Figure 1. Overview of the proposed method. Two branches process the sketch in
-parallel: a geometric branch reads local structure with dynamic graph
-convolutions, and a sequence branch captures stroke order with a Bi-GRU plus a
-Transformer whose attention carries the T-Grd encoding. The fused features are
-pooled per stroke, classified and broadcast back to the points.*
+![Framework of the proposed SketchMeSeg model.](assets/method.png)
 
 The model has two parallel branches built on the same point sequence:
 
@@ -105,6 +102,8 @@ all classes in the full dataset. Best results in **bold**.
 | Knob | 78.90 | 74.60 | 82.90 | 70.90 | 85.30 | 75.20 | 80.70 | 66.20 | **95.98** | **91.56** |
 | Chain | 64.20 | 58.30 | 69.03 | 64.32 | 72.50 | 54.20 | 80.70 | 68.10 | **85.80** | **75.30** |
 | Avg. | 77.78 | 71.90 | 78.78 | 74.51 | 87.05 | 81.85 | 88.84 | 83.90 | **90.49** | **86.04** |
+
+![Results of the proposed SketchMeSeg model.](assets/results.png)
 
 ## Licence
 
