@@ -1,0 +1,13 @@
+# python
+__pycache__/
+*.pyc
+*.pt
+
+# training artifacts
+logs/
+checkpoints/
+
+# editable
+.idea/
+.vscode/
+.DS_Store
